@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045800AF223B4C6200BA3B0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800AE223B4C6200BA3B0C /* AppDelegate.m */; };
+		045800B2223B4C6200BA3B0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800B1223B4C6200BA3B0C /* ViewController.m */; };
+		045800B5223B4C6200BA3B0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045800B3223B4C6200BA3B0C /* Main.storyboard */; };
+		045800B7223B4C6400BA3B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045800B6223B4C6400BA3B0C /* Assets.xcassets */; };
+		045800BA223B4C6400BA3B0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045800B8223B4C6400BA3B0C /* LaunchScreen.storyboard */; };
+		045800BD223B4C6400BA3B0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800BC223B4C6400BA3B0C /* main.m */; };
+		045800FE223B503B00BA3B0C /* DrawContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800C8223B503B00BA3B0C /* DrawContextManager.m */; };
+		045800FF223B503B00BA3B0C /* AudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800C9223B503B00BA3B0C /* AudioRecorder.m */; };
+		04580100223B503B00BA3B0C /* ZHLRecordTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800CC223B503B00BA3B0C /* ZHLRecordTimeLine.m */; };
+		04580101223B503B00BA3B0C /* RecordDataHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800D0223B503B00BA3B0C /* RecordDataHelp.m */; };
+		04580102223B503B00BA3B0C /* TutorBezierPointEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800D4223B503B00BA3B0C /* TutorBezierPointEntity.m */; };
+		04580103223B503B00BA3B0C /* TutorBezierVideoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800D5223B503B00BA3B0C /* TutorBezierVideoEntity.m */; };
+		04580104223B503B00BA3B0C /* UIColor+ZHL.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800DA223B503B00BA3B0C /* UIColor+ZHL.m */; };
+		04580105223B503B00BA3B0C /* LKTestModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800DF223B503B00BA3B0C /* LKTestModels.m */; };
+		04580106223B503B00BA3B0C /* LKTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800E0223B503B00BA3B0C /* LKTestMain.m */; };
+		04580107223B503B00BA3B0C /* Describe in Resources */ = {isa = PBXBuildFile; fileRef = 045800E1223B503B00BA3B0C /* Describe */; };
+		04580108223B503B00BA3B0C /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800E7223B503B00BA3B0C /* FMDatabase+InMemoryOnDiskIO.m */; };
+		04580109223B503B00BA3B0C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800EA223B503B00BA3B0C /* FMDatabaseQueue.m */; };
+		0458010A223B503B00BA3B0C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800ED223B503B00BA3B0C /* FMDatabaseAdditions.m */; };
+		0458010B223B503B00BA3B0C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800EE223B503B00BA3B0C /* FMDatabase.m */; };
+		0458010C223B503B00BA3B0C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800F1223B503B00BA3B0C /* FMDatabasePool.m */; };
+		0458010D223B503B00BA3B0C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800F2223B503B00BA3B0C /* FMResultSet.m */; };
+		0458010E223B503B00BA3B0C /* NSObject+LKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800F6223B503B00BA3B0C /* NSObject+LKModel.m */; };
+		0458010F223B503B00BA3B0C /* NSObject+LKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800F8223B503B00BA3B0C /* NSObject+LKDBHelper.m */; };
+		04580110223B503B00BA3B0C /* LKDBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800F9223B503B00BA3B0C /* LKDBUtils.m */; };
+		04580111223B503B00BA3B0C /* LKDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800FA223B503B00BA3B0C /* LKDBHelper.m */; };
+		04580112223B503B00BA3B0C /* LKDB+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 045800FB223B503B00BA3B0C /* LKDB+Mapping.m */; };
+		0458011C223B899900BA3B0C /* PathCacheView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0458011B223B899900BA3B0C /* PathCacheView.m */; };
+		0458011F223B8B5400BA3B0C /* PathImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0458011E223B8B5400BA3B0C /* PathImageView.m */; };
+		04580122223B8C0100BA3B0C /* PathRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04580121223B8C0100BA3B0C /* PathRecordView.m */; };
+		0458012B223BA78200BA3B0C /* ZHLPlayTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0458012A223BA78200BA3B0C /* ZHLPlayTimeLine.m */; };
+		0458012F223BA86100BA3B0C /* ZHLAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0458012E223BA86100BA3B0C /* ZHLAudioPlayer.m */; };
+		04580132223BABE200BA3B0C /* PathPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04580131223BABE200BA3B0C /* PathPlayView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		045800AA223B4C6200BA3B0C /* ScreenRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045800AD223B4C6200BA3B0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		045800AE223B4C6200BA3B0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		045800B0223B4C6200BA3B0C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		045800B1223B4C6200BA3B0C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		045800B4223B4C6200BA3B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		045800B6223B4C6400BA3B0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045800B9223B4C6400BA3B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045800BB223B4C6400BA3B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045800BC223B4C6400BA3B0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		045800C7223B503B00BA3B0C /* AudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecorder.h; sourceTree = "<group>"; };
+		045800C8223B503B00BA3B0C /* DrawContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawContextManager.m; sourceTree = "<group>"; };
+		045800C9223B503B00BA3B0C /* AudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecorder.m; sourceTree = "<group>"; };
+		045800CA223B503B00BA3B0C /* DrawContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawContextManager.h; sourceTree = "<group>"; };
+		045800CC223B503B00BA3B0C /* ZHLRecordTimeLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHLRecordTimeLine.m; sourceTree = "<group>"; };
+		045800CD223B503B00BA3B0C /* RecordDataHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordDataHelp.h; sourceTree = "<group>"; };
+		045800CE223B503B00BA3B0C /* MaterialRecordProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialRecordProtocol.h; sourceTree = "<group>"; };
+		045800CF223B503B00BA3B0C /* ZHLRecordTimeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHLRecordTimeLine.h; sourceTree = "<group>"; };
+		045800D0223B503B00BA3B0C /* RecordDataHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordDataHelp.m; sourceTree = "<group>"; };
+		045800D4223B503B00BA3B0C /* TutorBezierPointEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorBezierPointEntity.m; sourceTree = "<group>"; };
+		045800D5223B503B00BA3B0C /* TutorBezierVideoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorBezierVideoEntity.m; sourceTree = "<group>"; };
+		045800D6223B503B00BA3B0C /* TutorBezierVideoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorBezierVideoEntity.h; sourceTree = "<group>"; };
+		045800D7223B503B00BA3B0C /* TutorBezierPointEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorBezierPointEntity.h; sourceTree = "<group>"; };
+		045800DA223B503B00BA3B0C /* UIColor+ZHL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZHL.m"; sourceTree = "<group>"; };
+		045800DB223B503B00BA3B0C /* UIColor+ZHL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZHL.h"; sourceTree = "<group>"; };
+		045800DF223B503B00BA3B0C /* LKTestModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTestModels.m; sourceTree = "<group>"; };
+		045800E0223B503B00BA3B0C /* LKTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTestMain.m; sourceTree = "<group>"; };
+		045800E1223B503B00BA3B0C /* Describe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Describe; sourceTree = "<group>"; };
+		045800E2223B503B00BA3B0C /* LKTestModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTestModels.h; sourceTree = "<group>"; };
+		045800E3223B503B00BA3B0C /* LKTestMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTestMain.h; sourceTree = "<group>"; };
+		045800E6223B503B00BA3B0C /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		045800E7223B503B00BA3B0C /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		045800E9223B503B00BA3B0C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		045800EA223B503B00BA3B0C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		045800EB223B503B00BA3B0C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		045800EC223B503B00BA3B0C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		045800ED223B503B00BA3B0C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		045800EE223B503B00BA3B0C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		045800EF223B503B00BA3B0C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		045800F0223B503B00BA3B0C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		045800F1223B503B00BA3B0C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		045800F2223B503B00BA3B0C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		045800F4223B503B00BA3B0C /* LKDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDBHelper.h; sourceTree = "<group>"; };
+		045800F5223B503B00BA3B0C /* LKDBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDBUtils.h; sourceTree = "<group>"; };
+		045800F6223B503B00BA3B0C /* NSObject+LKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LKModel.m"; sourceTree = "<group>"; };
+		045800F7223B503B00BA3B0C /* LKDB+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LKDB+Mapping.h"; sourceTree = "<group>"; };
+		045800F8223B503B00BA3B0C /* NSObject+LKDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LKDBHelper.m"; sourceTree = "<group>"; };
+		045800F9223B503B00BA3B0C /* LKDBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDBUtils.m; sourceTree = "<group>"; };
+		045800FA223B503B00BA3B0C /* LKDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDBHelper.m; sourceTree = "<group>"; };
+		045800FB223B503B00BA3B0C /* LKDB+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LKDB+Mapping.m"; sourceTree = "<group>"; };
+		045800FC223B503B00BA3B0C /* NSObject+LKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKModel.h"; sourceTree = "<group>"; };
+		045800FD223B503B00BA3B0C /* NSObject+LKDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKDBHelper.h"; sourceTree = "<group>"; };
+		04580113223B50BE00BA3B0C /* Recording.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Recording.pch; sourceTree = "<group>"; };
+		0458011A223B899900BA3B0C /* PathCacheView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathCacheView.h; sourceTree = "<group>"; };
+		0458011B223B899900BA3B0C /* PathCacheView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PathCacheView.m; sourceTree = "<group>"; };
+		0458011D223B8B5400BA3B0C /* PathImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathImageView.h; sourceTree = "<group>"; };
+		0458011E223B8B5400BA3B0C /* PathImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PathImageView.m; sourceTree = "<group>"; };
+		04580120223B8C0100BA3B0C /* PathRecordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathRecordView.h; sourceTree = "<group>"; };
+		04580121223B8C0100BA3B0C /* PathRecordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PathRecordView.m; sourceTree = "<group>"; };
+		04580128223BA74F00BA3B0C /* MaterialPlayProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaterialPlayProtocol.h; sourceTree = "<group>"; };
+		04580129223BA78200BA3B0C /* ZHLPlayTimeLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLPlayTimeLine.h; sourceTree = "<group>"; };
+		0458012A223BA78200BA3B0C /* ZHLPlayTimeLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLPlayTimeLine.m; sourceTree = "<group>"; };
+		0458012D223BA86100BA3B0C /* ZHLAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHLAudioPlayer.h; sourceTree = "<group>"; };
+		0458012E223BA86100BA3B0C /* ZHLAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLAudioPlayer.m; sourceTree = "<group>"; };
+		04580130223BABE200BA3B0C /* PathPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathPlayView.h; sourceTree = "<group>"; };
+		04580131223BABE200BA3B0C /* PathPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PathPlayView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045800A7223B4C6200BA3B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045800A1223B4C6100BA3B0C = {
+			isa = PBXGroup;
+			children = (
+				045800AC223B4C6200BA3B0C /* ScreenRecording */,
+				045800AB223B4C6200BA3B0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		045800AB223B4C6200BA3B0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045800AA223B4C6200BA3B0C /* ScreenRecording.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045800AC223B4C6200BA3B0C /* ScreenRecording */ = {
+			isa = PBXGroup;
+			children = (
+				045800C3223B503B00BA3B0C /* Class */,
+				045800AD223B4C6200BA3B0C /* AppDelegate.h */,
+				045800AE223B4C6200BA3B0C /* AppDelegate.m */,
+				04580113223B50BE00BA3B0C /* Recording.pch */,
+				045800B0223B4C6200BA3B0C /* ViewController.h */,
+				045800B1223B4C6200BA3B0C /* ViewController.m */,
+				045800B3223B4C6200BA3B0C /* Main.storyboard */,
+				045800B6223B4C6400BA3B0C /* Assets.xcassets */,
+				045800B8223B4C6400BA3B0C /* LaunchScreen.storyboard */,
+				045800BB223B4C6400BA3B0C /* Info.plist */,
+				045800BC223B4C6400BA3B0C /* main.m */,
+			);
+			path = ScreenRecording;
+			sourceTree = "<group>";
+		};
+		045800C3223B503B00BA3B0C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				045800C4223B503B00BA3B0C /* Demo */,
+				045800D9223B503B00BA3B0C /* Categ */,
+				045800DC223B503B00BA3B0C /* Lib */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		045800C4223B503B00BA3B0C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				045800D3223B503B00BA3B0C /* Model */,
+				045800C5223B503B00BA3B0C /* Record */,
+				045800D8223B503B00BA3B0C /* Play */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		045800C5223B503B00BA3B0C /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				045800C6223B503B00BA3B0C /* Tools */,
+				045800CB223B503B00BA3B0C /* Protocol */,
+				045800D1223B503B00BA3B0C /* View */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		045800C6223B503B00BA3B0C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				045800CA223B503B00BA3B0C /* DrawContextManager.h */,
+				045800C8223B503B00BA3B0C /* DrawContextManager.m */,
+				045800C7223B503B00BA3B0C /* AudioRecorder.h */,
+				045800C9223B503B00BA3B0C /* AudioRecorder.m */,
+				045800CD223B503B00BA3B0C /* RecordDataHelp.h */,
+				045800D0223B503B00BA3B0C /* RecordDataHelp.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		045800CB223B503B00BA3B0C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				045800CE223B503B00BA3B0C /* MaterialRecordProtocol.h */,
+				045800CF223B503B00BA3B0C /* ZHLRecordTimeLine.h */,
+				045800CC223B503B00BA3B0C /* ZHLRecordTimeLine.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		045800D1223B503B00BA3B0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0458011A223B899900BA3B0C /* PathCacheView.h */,
+				0458011B223B899900BA3B0C /* PathCacheView.m */,
+				0458011D223B8B5400BA3B0C /* PathImageView.h */,
+				0458011E223B8B5400BA3B0C /* PathImageView.m */,
+				04580120223B8C0100BA3B0C /* PathRecordView.h */,
+				04580121223B8C0100BA3B0C /* PathRecordView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045800D3223B503B00BA3B0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				045800D6223B503B00BA3B0C /* TutorBezierVideoEntity.h */,
+				045800D5223B503B00BA3B0C /* TutorBezierVideoEntity.m */,
+				045800D7223B503B00BA3B0C /* TutorBezierPointEntity.h */,
+				045800D4223B503B00BA3B0C /* TutorBezierPointEntity.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		045800D8223B503B00BA3B0C /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				0458012C223BA83700BA3B0C /* Tools */,
+				04580123223BA2CC00BA3B0C /* Protocol */,
+				04580124223BA2CC00BA3B0C /* View */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		045800D9223B503B00BA3B0C /* Categ */ = {
+			isa = PBXGroup;
+			children = (
+				045800DB223B503B00BA3B0C /* UIColor+ZHL.h */,
+				045800DA223B503B00BA3B0C /* UIColor+ZHL.m */,
+			);
+			path = Categ;
+			sourceTree = "<group>";
+		};
+		045800DC223B503B00BA3B0C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				045800DD223B503B00BA3B0C /* LKDBHelper */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		045800DD223B503B00BA3B0C /* LKDBHelper */ = {
+			isa = PBXGroup;
+			children = (
+				045800DE223B503B00BA3B0C /* Demo */,
+				045800E4223B503B00BA3B0C /* FMDB */,
+				045800F3223B503B00BA3B0C /* Helper */,
+			);
+			path = LKDBHelper;
+			sourceTree = "<group>";
+		};
+		045800DE223B503B00BA3B0C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				045800DF223B503B00BA3B0C /* LKTestModels.m */,
+				045800E0223B503B00BA3B0C /* LKTestMain.m */,
+				045800E1223B503B00BA3B0C /* Describe */,
+				045800E2223B503B00BA3B0C /* LKTestModels.h */,
+				045800E3223B503B00BA3B0C /* LKTestMain.h */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		045800E4223B503B00BA3B0C /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				045800E5223B503B00BA3B0C /* extra */,
+				045800E8223B503B00BA3B0C /* src */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		045800E5223B503B00BA3B0C /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				045800E6223B503B00BA3B0C /* FMDatabase+InMemoryOnDiskIO.h */,
+				045800E7223B503B00BA3B0C /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		045800E8223B503B00BA3B0C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				045800E9223B503B00BA3B0C /* FMDatabase.h */,
+				045800EA223B503B00BA3B0C /* FMDatabaseQueue.m */,
+				045800EB223B503B00BA3B0C /* FMResultSet.h */,
+				045800EC223B503B00BA3B0C /* FMDatabasePool.h */,
+				045800ED223B503B00BA3B0C /* FMDatabaseAdditions.m */,
+				045800EE223B503B00BA3B0C /* FMDatabase.m */,
+				045800EF223B503B00BA3B0C /* FMDatabaseQueue.h */,
+				045800F0223B503B00BA3B0C /* FMDatabaseAdditions.h */,
+				045800F1223B503B00BA3B0C /* FMDatabasePool.m */,
+				045800F2223B503B00BA3B0C /* FMResultSet.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		045800F3223B503B00BA3B0C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				045800F4223B503B00BA3B0C /* LKDBHelper.h */,
+				045800F5223B503B00BA3B0C /* LKDBUtils.h */,
+				045800F6223B503B00BA3B0C /* NSObject+LKModel.m */,
+				045800F7223B503B00BA3B0C /* LKDB+Mapping.h */,
+				045800F8223B503B00BA3B0C /* NSObject+LKDBHelper.m */,
+				045800F9223B503B00BA3B0C /* LKDBUtils.m */,
+				045800FA223B503B00BA3B0C /* LKDBHelper.m */,
+				045800FB223B503B00BA3B0C /* LKDB+Mapping.m */,
+				045800FC223B503B00BA3B0C /* NSObject+LKModel.h */,
+				045800FD223B503B00BA3B0C /* NSObject+LKDBHelper.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		04580123223BA2CC00BA3B0C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				04580128223BA74F00BA3B0C /* MaterialPlayProtocol.h */,
+				04580129223BA78200BA3B0C /* ZHLPlayTimeLine.h */,
+				0458012A223BA78200BA3B0C /* ZHLPlayTimeLine.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		04580124223BA2CC00BA3B0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04580130223BABE200BA3B0C /* PathPlayView.h */,
+				04580131223BABE200BA3B0C /* PathPlayView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0458012C223BA83700BA3B0C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0458012D223BA86100BA3B0C /* ZHLAudioPlayer.h */,
+				0458012E223BA86100BA3B0C /* ZHLAudioPlayer.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045800A9223B4C6200BA3B0C /* ScreenRecording */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045800C0223B4C6400BA3B0C /* Build configuration list for PBXNativeTarget "ScreenRecording" */;
+			buildPhases = (
+				045800A6223B4C6200BA3B0C /* Sources */,
+				045800A7223B4C6200BA3B0C /* Frameworks */,
+				045800A8223B4C6200BA3B0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenRecording;
+			productName = ScreenRecording;
+			productReference = 045800AA223B4C6200BA3B0C /* ScreenRecording.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045800A2223B4C6100BA3B0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = haijiang;
+				TargetAttributes = {
+					045800A9223B4C6200BA3B0C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 045800A5223B4C6100BA3B0C /* Build configuration list for PBXProject "ScreenRecording" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045800A1223B4C6100BA3B0C;
+			productRefGroup = 045800AB223B4C6200BA3B0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045800A9223B4C6200BA3B0C /* ScreenRecording */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045800A8223B4C6200BA3B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045800BA223B4C6400BA3B0C /* LaunchScreen.storyboard in Resources */,
+				04580107223B503B00BA3B0C /* Describe in Resources */,
+				045800B7223B4C6400BA3B0C /* Assets.xcassets in Resources */,
+				045800B5223B4C6200BA3B0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045800A6223B4C6200BA3B0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04580103223B503B00BA3B0C /* TutorBezierVideoEntity.m in Sources */,
+				04580108223B503B00BA3B0C /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				04580132223BABE200BA3B0C /* PathPlayView.m in Sources */,
+				045800FF223B503B00BA3B0C /* AudioRecorder.m in Sources */,
+				04580109223B503B00BA3B0C /* FMDatabaseQueue.m in Sources */,
+				0458010F223B503B00BA3B0C /* NSObject+LKDBHelper.m in Sources */,
+				0458011C223B899900BA3B0C /* PathCacheView.m in Sources */,
+				04580110223B503B00BA3B0C /* LKDBUtils.m in Sources */,
+				04580102223B503B00BA3B0C /* TutorBezierPointEntity.m in Sources */,
+				04580106223B503B00BA3B0C /* LKTestMain.m in Sources */,
+				0458012F223BA86100BA3B0C /* ZHLAudioPlayer.m in Sources */,
+				0458010D223B503B00BA3B0C /* FMResultSet.m in Sources */,
+				045800B2223B4C6200BA3B0C /* ViewController.m in Sources */,
+				045800FE223B503B00BA3B0C /* DrawContextManager.m in Sources */,
+				0458010E223B503B00BA3B0C /* NSObject+LKModel.m in Sources */,
+				045800BD223B4C6400BA3B0C /* main.m in Sources */,
+				04580104223B503B00BA3B0C /* UIColor+ZHL.m in Sources */,
+				0458012B223BA78200BA3B0C /* ZHLPlayTimeLine.m in Sources */,
+				04580101223B503B00BA3B0C /* RecordDataHelp.m in Sources */,
+				04580100223B503B00BA3B0C /* ZHLRecordTimeLine.m in Sources */,
+				045800AF223B4C6200BA3B0C /* AppDelegate.m in Sources */,
+				04580122223B8C0100BA3B0C /* PathRecordView.m in Sources */,
+				04580105223B503B00BA3B0C /* LKTestModels.m in Sources */,
+				0458011F223B8B5400BA3B0C /* PathImageView.m in Sources */,
+				04580111223B503B00BA3B0C /* LKDBHelper.m in Sources */,
+				0458010A223B503B00BA3B0C /* FMDatabaseAdditions.m in Sources */,
+				0458010B223B503B00BA3B0C /* FMDatabase.m in Sources */,
+				04580112223B503B00BA3B0C /* LKDB+Mapping.m in Sources */,
+				0458010C223B503B00BA3B0C /* FMDatabasePool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		045800B3223B4C6200BA3B0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045800B4223B4C6200BA3B0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		045800B8223B4C6400BA3B0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045800B9223B4C6400BA3B0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045800BE223B4C6400BA3B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		045800BF223B4C6400BA3B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045800C1223B4C6400BA3B0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E782D3AZ53;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ScreenRecording/Recording.pch;
+				INFOPLIST_FILE = ScreenRecording/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ZHL.ScreenRecording;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045800C2223B4C6400BA3B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E782D3AZ53;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ScreenRecording/Recording.pch;
+				INFOPLIST_FILE = ScreenRecording/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ZHL.ScreenRecording;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045800A5223B4C6100BA3B0C /* Build configuration list for PBXProject "ScreenRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045800BE223B4C6400BA3B0C /* Debug */,
+				045800BF223B4C6400BA3B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045800C0223B4C6400BA3B0C /* Build configuration list for PBXNativeTarget "ScreenRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045800C1223B4C6400BA3B0C /* Debug */,
+				045800C2223B4C6400BA3B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045800A2223B4C6100BA3B0C /* Project object */;
+}
