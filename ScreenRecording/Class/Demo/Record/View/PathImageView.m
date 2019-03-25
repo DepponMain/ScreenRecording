@@ -67,6 +67,11 @@
         CGPathAddLineToPoint(_path, nil, movePoint.x, movePoint.y);
         // 显示当前正在画得轨迹
         [_pathCacheView showPath:_path withPathConfig:_pathConfigEntity];
+        
+        if (_pathConfigEntity.isEraser) {
+            [self endPath:movePoint];
+            [self beginPath:movePoint withConfigEntity:_pathConfigEntity];
+        }
     }
 }
 

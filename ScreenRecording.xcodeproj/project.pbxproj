@@ -40,6 +40,7 @@
 		0458012B223BA78200BA3B0C /* ZHLPlayTimeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0458012A223BA78200BA3B0C /* ZHLPlayTimeLine.m */; };
 		0458012F223BA86100BA3B0C /* ZHLAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0458012E223BA86100BA3B0C /* ZHLAudioPlayer.m */; };
 		04580132223BABE200BA3B0C /* PathPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04580131223BABE200BA3B0C /* PathPlayView.m */; };
+		5CF00A2422492B310064CABC /* PathPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF00A2222492B300064CABC /* PathPlayVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +110,8 @@
 		0458012E223BA86100BA3B0C /* ZHLAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHLAudioPlayer.m; sourceTree = "<group>"; };
 		04580130223BABE200BA3B0C /* PathPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathPlayView.h; sourceTree = "<group>"; };
 		04580131223BABE200BA3B0C /* PathPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PathPlayView.m; sourceTree = "<group>"; };
+		5CF00A2222492B300064CABC /* PathPlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathPlayVC.m; sourceTree = "<group>"; };
+		5CF00A2322492B310064CABC /* PathPlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathPlayVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				04580113223B50BE00BA3B0C /* Recording.pch */,
 				045800B0223B4C6200BA3B0C /* ViewController.h */,
 				045800B1223B4C6200BA3B0C /* ViewController.m */,
+				5CF00A2322492B310064CABC /* PathPlayVC.h */,
+				5CF00A2222492B300064CABC /* PathPlayVC.m */,
 				045800B3223B4C6200BA3B0C /* Main.storyboard */,
 				045800B6223B4C6400BA3B0C /* Assets.xcassets */,
 				045800B8223B4C6400BA3B0C /* LaunchScreen.storyboard */,
@@ -436,6 +441,7 @@
 				04580103223B503B00BA3B0C /* TutorBezierVideoEntity.m in Sources */,
 				04580108223B503B00BA3B0C /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				04580132223BABE200BA3B0C /* PathPlayView.m in Sources */,
+				5CF00A2422492B310064CABC /* PathPlayVC.m in Sources */,
 				045800FF223B503B00BA3B0C /* AudioRecorder.m in Sources */,
 				04580109223B503B00BA3B0C /* FMDatabaseQueue.m in Sources */,
 				0458010F223B503B00BA3B0C /* NSObject+LKDBHelper.m in Sources */,
