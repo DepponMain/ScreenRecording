@@ -93,7 +93,7 @@
         // 开始
         en.lId = _lineId;
         en.isEraser = _isEraser;
-        en.color = [UIColor colorToLongValueWithRed:self.color.red green:self.color.blue blue:self.color.red];
+        en.color = [UIColor colorToLongValueWithRed:self.color.red green:self.color.green blue:self.color.blue];
     }
     // 非录制状态下，不保存录制点
     if ([self.recordTimeLine timeLineState] == RECORDING) {
