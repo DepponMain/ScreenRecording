@@ -71,7 +71,6 @@
  @param tag 1：开始录  2：暂停录  3：停止录  4：开始播  5：橡皮擦  6：黑色  7：蓝色  8：绿色
  */
 - (void)topViewBtnClickWithTag:(NSInteger)tag{
-    self.topView.setState = 0;
     if (tag == 1) {
         [self startRecord];
     }else if (tag == 2) {
@@ -96,6 +95,7 @@
  重新录制按钮点击
  */
 - (void)reRecordBtnClick{
+    [_playTimeLine stopPlay];
     self.topView.hidden = NO;
     self.bottomView.hidden = YES;
 }
@@ -196,10 +196,12 @@ static long oldTimeMillisecond;
 }
 //暂停录制
 - (void)pause{
+    self.topView.setState = 0;
     [_recordTimeLine pauseRecord];
 }
 //停止录制
 - (void)stopRecord {
+    self.topView.setState = 0;
     [_recordTimeLine stopRecord];
 }
 //开始播放
