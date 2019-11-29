@@ -614,7 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3G32T5K5ZA;
+				DEVELOPMENT_TEAM = KXWAPNN55D;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ScreenRecording/Recording.pch;
 				INFOPLIST_FILE = ScreenRecording/Info.plist;
