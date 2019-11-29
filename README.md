@@ -5,7 +5,7 @@
 通过记录点的坐标和点绘制的时间，记录轨迹信息。然后在相应的时间去绘制相应的点，再加上录音的播放。从而实现了伪视频的录制和播放
 
 ### 效果
-![](https://github.com/DepponMain/ScreenRecording/raw/master/GIF/ScreenRecording.gif)
+![](https://github.com/DepponMain/ScreenRecording/raw/master/Gif/ScreenRecording.gif)
 
 
 ---
